@@ -1,0 +1,28 @@
+---
+    import 'bootstrap/dist/css/bootstrap.css'; 
+    import Header from '../components/Header.astro';
+    const {titulo} = Astro.props;
+    
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{titulo}</title>
+	</head>
+	<body>
+        <Header/>
+		<slot/>
+	</body>
+	<script src="bootstrap/dist/js/bootstrap.bundle.js"></script> 
+</html>
+<style>
+    body{
+        background-color: #C7EAFB;
+        color:#0C3079;
+        font-family: "proxima-nova", Geneva, Tahoma, sans-serif;
+    }
+</style>
