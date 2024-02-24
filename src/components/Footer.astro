@@ -1,3 +1,100 @@
-<footer>
-    
+---
+import { Image } from 'astro:assets';
+import logo from '../img/logonegro.png';
+import logoar2 from '../img/logoarsistema2.jpg';
+import logocaripito from '../img/logocaripito.jpg';
+import logomolie from '../img/logomobilie.jpg';
+---
+<footer class="bg-black">
+    <div class="container">
+
+ 
+        <div class="row py-5 text-center">
+            <div class="col-md-4">
+                <Image src={logo} alt="logo" width={250}/>
+            </div>
+            <div class="col-md-4">
+                <ul class="navbar-nav me-auto ">
+                    
+                      <a class="btn btn-warning" aria-current="page" href="/">Inicio</a>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="/historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/resultados">Resultados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/calendarios">Calendarios</a>
+                    </li>
+          
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Estadisticas
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/estadisticas/estadisticasdejugadores">Estadísticas de Jugadores</a></li>
+                        <li><a class="dropdown-item" href="/estadisticas/estadisticasdelequipo">Estadísticas del Equipo</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Equipo
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/equipo/alineacion">Alineacion</a></li>
+                        <li><a class="dropdown-item" href="/equipo/equipocompleto">Equipo Completo</a></li>
+                        <li><a class="dropdown-item" href="/equipo/instructores">Instructores</a></li>
+                        <li><a class="dropdown-item" href="/equipo/tecnicos">Técnicos</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/videos">Videos</a>
+                    </li>
+          
+                  </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column  text-center">
+                <a class="btn mb-2" href="https://www.instagram.com/mobilie2020?utm_source=qr&igsh=cnY0aHl0cDh2Zmt1" target="_blank" >
+                  <Image src={logomolie} alt="logo" width={100} class="img-fluid border p-2"/>
+                </a>
+                <a class="btn mb-2" href="https://www.instagram.com/academiadebeisbolcaripito?igsh=aThnd2YxaHhxd3d1" target="_blank">
+                  <Image src={logocaripito} alt="logo" width={100} class="img-fluid border p-2"/>
+                </a>
+                <a href="https://arsistema.com/" target="_blank">
+                    <Image src={logoar2} alt="logo" width={100} class="img-fluid border p-2"/>
+                </a>
+              </div>
+
+
+            </div>
+        </div>
+        <div class="text-center text-white-50">
+            SANTIAGO RANGER 2024 © Todos los derechos reservados | Desarrollado por Ar Sistema
+        </div>
+    </div>
 </footer>
+<style>
+    .nav-item{
+        color:aliceblue
+    }
+    footer img{
+      transition: 0.6s; 
+      box-shadow: 2px 2px 4px #2c2b2b;
+      border-radius: 3px;
+    }
+    footer img:hover{
+      transform: scale(1.02); 
+      cursor: pointer;
+    }
+</style>

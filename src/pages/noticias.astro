@@ -1,0 +1,52 @@
+---
+
+    import Layout from '../layout/Layout.astro'; 
+    import Carousel from '../components/Carousel.astro';
+---
+
+<Layout titulo="Noticias">
+    <Carousel/>
+    <div class="container">
+        <div class="text-center text-black-50 pt-4">
+            <h3 class="text-center py-4 bg-light">GALERIAS</h3>
+        </div>
+
+       <div class="bg-light  py-4 pe-2" id="visorNoticias">
+   
+            <div class="d-flex flex-column justify-content-center">
+                <div class="bg-light p-2 mb-4 text-center">
+                    <img src="/noticias/not1det.png" alt="detalle" class="img-fluid img-thumbnail">
+                    <p class="py-4 px-2"><b>JUEGO AMISTOSO</b>
+                        RANGER VS SELECCION SENIOR previo al inicio del torneo Copa Pony League
+                        el dia viernes 23 de febrero a las 10.30am en el estadio Bonilla </p>
+                </div>
+                <div class="bg-white p-2 mb-4 text-center">
+                    <img src="/noticias/not2det.png" alt="detalle" class="img-fluid">
+                    <p class="py-4 px-2"><b>JUEGO AMISTOSO</b> U12 previo al inicio del torneo
+                        Confirmado el juego amistoso el sábado a las 9.00am en el estadio de la Florida </p>
+                </div>
+                <div class="bg-white p-2 mb-4 text-center">
+                    <img src="/noticias/not3det.png" alt="detalle" class="img-fluid">
+                    <p class="py-4 px-2"><b>JUEGO AMISTOSO</b> U14 previo al inicio del torneo
+                        Confirmado el juego amistoso el sábado a las 11.00am en el estadio de la Florida</p>
+                </div>
+            </div>
+
+       </div>
+    </div>
+    </div>
+	
+
+</Layout>
+<style>
+    #noticiaindex{
+        overflow: auto;
+    }
+    #visornoticias{
+        overflow: auto;
+    }
+
+   
+   
+
+</style>

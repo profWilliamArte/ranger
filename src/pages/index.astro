@@ -1,7 +1,52 @@
 ---
     import Layout from '../layout/Layout.astro'; 
+    import { Image } from 'astro:assets';
+    import Carousel from '../components/Carousel.astro';
+    import inicio01 from '../img/inicio01.jpg'
+    import logosolo from '../img/logoSolo.png'
 ---
 
 <Layout titulo="Noticias">
-	<h3 class="text-center py-4">Noticias</h3>
+<div id="inicio">
+    <div class="container" >
+      <div class="py-2">
+
+        <div class="px-4 py-5 my-5 text-center" style="background-color: rgba(0, 0, 0, 0.4);">
+            <Image class="d-block mx-auto mb-3" src={logosolo} alt="logo" width={80} />
+            <h1 class="display-5 fw-bold text-white">SANTIAGO RANGERS</h1>
+            <div class="col-lg-8 mx-auto text-white">
+              <p class="lead mb-2 ">Somos un equipo de béisbol con sede en <b>Santiago de Chile</b>, conformado por 5 categorías: U10, U12, U14, U16, U18. Nuestro propósito es participar en numerosos torneos a nivel nacional e internacional.</p>
+              <p class="lead mb-4">Nuestra misión es <b>desarrollar el talento y el espíritu deportivo</b> de nuestros jugadores, brindándoles oportunidades de competir a niveles desafiantes y preparatorios para carreras en el béisbol profesional.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="/calendarios" class="btn btn-danger btn-lg px-4 gap-3" >Calendario de Juegos</a>
+                <a href="/resultados"  class="btn btn-dark btn-lg px-4">Resultados</a>
+              </div>
+            </div>
+          </div>
+
+
+ 
+    </div>
+    </div>
+</div>
+
 </Layout>
+<style>
+    #inicio{
+        background-image: url('../img/campo.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    main{
+		  min-height: 100vh;
+		  margin-bottom: 0px;	
+	}
+    h1, p{
+        text-shadow: 0px 2px 4px #000;
+    }
+    .btn{
+        box-shadow: 0px 2px 4px #202020; 
+    }
+</style>
+
